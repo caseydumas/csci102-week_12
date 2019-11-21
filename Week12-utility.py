@@ -45,6 +45,11 @@ def Intersections(list_one, list_two):
             intersection_list.append(list_one[i])
     return intersection_list
 
+def NotIn(list_one, list_two):
+    for i in list_one:
+        if list_one[i] in list_two:
+            list_one[i].pop()
+    return list_one
 
 PrintOutput()
 LoadFile()
@@ -53,3 +58,4 @@ FindWordCount()
 ScoreFinder()
 Union()
 Intersections()
+NotIn()

@@ -37,6 +37,19 @@ def Union(list_one, list_two):
         if list_two[i] not in list_one:
             union_list.append(list_two[i])
     return union_list
-PrintOutput('hi')
-LoadFile("C:/Users/casey/csci102-week_12/README.md")
-UpdateString('hello there', 'ye', 4)
+
+def Intersections(list_one, list_two):
+    intersection_list = []
+    for i in list_one:
+        if list_one[i] in list_two:
+            intersection_list.append(list_one[i])
+    return intersection_list
+
+
+PrintOutput()
+LoadFile()
+UpdateString()
+FindWordCount()
+ScoreFinder()
+Union()
+Intersections()

@@ -19,7 +19,16 @@ def FindWordCount(input_list, input_string):
     for i in input_list:
         if input_list[i] == input_string:
             count += 1
-            
+
+def ScoreFinder(list_one, list_two, input_string):
+    for i in list_one:
+        if list_one[i] == input_string:
+            score = list_two[i]
+            print('OUPUT '+input_string+' got a score of '+str(score))
+    if input_string not in list_one:
+        print('OUTPUT player not found')
+
+
 PrintOutput('hi')
 LoadFile("C:/Users/casey/csci102-week_12/README.md")
 UpdateString('hello there', 'ye', 4)
